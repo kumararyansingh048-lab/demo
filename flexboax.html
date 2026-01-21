@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="./stylesheet.css"> -->
+</head><style>
+  .container{
+    background-color: antiquewhite;
+    display: flex;
+      
+    /* flex-direction:row; by defaault raw rahta hai */
+    flex-direction:row;
+    height: 550px;
+    /* justify-content:center;
+    align-items:center ; */
+    /* flex-wrap:  wrap; */
+    gap: 10px;
+    
+  }
+  /* justify content aapke main axix ke hisaab se kaam krta hai or main axis
+   flex direction decide krta hai agar flex raw to maon axix horizental or
+    agar flex column toh main axix vertical*/
+    /* align-items: work on cross axix; */
+  .box{
+    height: 100px;
+    width: 100px;
+    /* margin: 5px; */
+  }
+  .first{
+    background-color: orange;
+    /* flex-grow: 1; */
+  }
+  .second{
+    background-color: green;
+    /* flex-shrink: 6; */
+  }
+  .third{
+    background-color: blue;
+    /* flex-shrink: 6; */
+    flex-basis: 300px;
+    /*flx basis depond on main axix*/
+  }
+  .fourth{
+    background-color: red;
+  }
+</style>
+<body style="background-color: rgb(16, 16, 15);">
+  <div class="container">
+    <div class="box first">first</div>
+     <div class="box second">second</div>
+     <div class="box third">third</div>
+     <div class="box fourth">fourth</div>
+     
+     
+  </div>
+</body>
+</html>
+

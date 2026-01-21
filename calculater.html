@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum and Sub</title>
+</head>
+<style>
+    body{ background-color: antiquewhite;
+
+    }
+    .calculater{
+        height: 400px;
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: aqua;
+    }
+</style>
+<body>
+    <div class="caluclater">
+
+  First number: <input type="text" id="fno">
+  <br><br>
+
+  Second number: <input type="text" id="sno">
+  <br><br>
+
+  <input type="button" onclick="sum()" value="Sum of two no">
+  <br><br>
+
+  <input type="button" onclick="sub()" value="Sub of two no">
+<br><br>
+
+<input type="button" onclick="muiltiplication()" value="muiltiplication of two no">
+<br><br>
+
+<input type="button" onclick="divison()" value="divison two no">
+<br><br>
+
+
+<script>
+    
+function sum() {
+    let fno = document.getElementById("fno").value;
+    let sno = document.getElementById("sno").value;
+
+    let result = parseInt(fno) + parseInt(sno);
+    alert("Sum of two is " + result);
+}
+
+function sub() {
+    let fno = document.getElementById("fno").value;
+    let sno = document.getElementById("sno").value;
+
+    let result = parseInt(fno) - parseInt(sno);
+    alert("Sub of two is " + result);
+}
+function muiltiplication() {
+    let fno = document.getElementById("fno").value;
+    let sno = document.getElementById("sno").value;
+
+    let result = parseInt(fno) * parseInt(sno);
+    alert("muiltiplication of two is " + result);
+}
+function divison() {
+    let fno = document.getElementById("fno").value;
+    let sno = document.getElementById("sno").value;
+
+    let result = parseInt(fno) / parseInt(sno);
+    alert("divison of two is " + result);
+}
+</script>
+</div>
+
+</body>
+</html>
